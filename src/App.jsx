@@ -1,6 +1,6 @@
 import "./App.css";
 import { Component } from "react";
-import{UserClass, UserFunc, UserFuncChildren} from "./user"
+import { UserClass, UserFunc, UserFuncChildren } from "./user";
 
 const users = [
     { name: "Ivan", years: 30 },
@@ -9,17 +9,15 @@ const users = [
 ];
 
 class App extends Component {
-  
     render() {
         return (
             <>
-                <UserClass name={users[0].name} years={users[0].years}/>
-                <UserFunc name={users[1].name} years={users[1].years}/>
+                <h1>State</h1>
+                <UserClass name={users[0].name} years={users[0].years} />
+                <UserFunc name={users[1].name} years={users[1].years} />
                 <UserFuncChildren name={users[2].name} years={users[2].years}>
-                  
-                  {users[2].name}
-                  {users[2].years}
-                  </UserFuncChildren>
+                    a hobi mi je programiranje...
+                </UserFuncChildren>
             </>
         );
     }

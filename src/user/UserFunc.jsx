@@ -1,9 +1,7 @@
-export default function FuncComponentA({ name, years }) {
+export default function UserFunc({ name, years }) {
     return (
         <>
-            <h2>Funkcijska komponenta jedan</h2>
-            <p>Ime korisnika: {name}</p>
-            <p>Dob korisnika: {years}</p>
+            <p>Pozdrav, moje ime je {name} i imam {years} godina.</p>
         </>
     );
 }
